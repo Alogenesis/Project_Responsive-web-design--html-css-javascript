@@ -33,7 +33,7 @@ ul {
     background-color:#333333;
   }
 
-  #logo {
+  #header-img {
     max-height: 50px;
     width: auto;
     border: 0px;
@@ -68,11 +68,32 @@ ul {
     padding: 10px;
   }
 
+.sample-container {
+    
+    width: 95%;
+    border: 3px solid black;
+    padding: 10px;
+}
+
+
+
 .samplepic {
     width: 250px;
     height: auto;
 }
 
+@media (max-width: 1000px){
+  .samplepic {
+   width: 150px;
+   display: flex;
+  }
+}
+
+
+#footer {
+  background-color: gray;
+  padding: 20px;
+}
 
 
 
