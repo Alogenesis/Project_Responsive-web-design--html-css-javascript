@@ -1,0 +1,33 @@
+body {
+    width: 85%;
+    background-size: cover;
+    background-image: url('https://www.pnas.org/content/pnas/117/15/8218/F1.large.jpg?width=800&height=600&carousel=1');
+    font-size: large;
+    
+}
+
+#header {
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+#content-container {
+    background-color: rgba(51, 51, 204,.5);
+    color: #fff;
+    margin: 30px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 10px;
+}
+
+.blank {
+    
+}
+
+#survey-form {
+    
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Web design Project : Tributepage - My fishing Journy</title>
+<link rel='stylesheet' href="css.css">
+</head>
+
+<body>
+    <header id='header'>
+    <h1 id='title' class="box-opacity">COVID-19 vaccination register</h1>
+
+    <p id='description'>please fill register form for staff preparing vaccine to you.</p>
+    </header>
+
+    <div id='content-container'>
+    <div id='blank'></div>
+    <form id='survey-form'>
+
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+        </div><br>
+
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
+        </div><br>
+
+        <div class="form-group">
+            <label id='number-label' for="number">Number of family in home (between 1 and 10)</label>
+            <input type="number" id="number" name="number" min="1" max="10" placeholder="1-10">
+        </div><br>
+
+        <div class="form-group">
+            <p>Risk level on your COVID-19 inflect?</p>
+            <select id="dropdown" name="role" class="form-control" required="">
+              <option disabled="" selected="" value="">Select answer</option>
+              <option value="inflect">Some members are Inflecting</option>
+              <option value="high risk">High risk, on quarantine state</option>
+              <option value="low risk">Low risk</option>
+            </select>
+        </div><br>
+
+        <div class="form-group">
+            <p>Your sex</p>
+            <label>
+            <input name="sex" value="male" type="radio" class="input-radio" checked="">Male</label>
+            <br>
+            <label>
+            <input name="sex" value="female" type="radio" class="input-radio">Female</label>
+            <br>
+            <label>
+            <input name="sex" value="lgbtq+" type="radio" class="input-radio">LGBTQ+</label>
+            <br>
+            <label>
+            <input name="sex" value="no answer" type="radio" class="input-radio">No need answer</label>
+        </div><br>
+
+        <div class="form-group">
+            <p>
+              Which decribe your current status about vaccination?
+              <span class="clue">(Can check more than 1 choice)</span>
+            </p>
+      
+            <label><input name="vaccine" value="1st dose" type="checkbox" class="input-checkbox">1st dose vaccinated</label><br>
+            <label><input name="vaccine" value="2st dose" type="checkbox" class="input-checkbox">2nd dose vaccinated</label><br>
+            <label><input name="vaccine" value="3rd dose" type="checkbox" class="input-checkbox">3rd booster dose vaccinated</label><br>
+            <label><input name="vaccine" value="Inflected" type="checkbox" class="input-checkbox">Was inflected in last 3 months</label><br>
+            <label><input name="vaccine" value="Never vaccinated" type="checkbox" class="input-checkbox">Never vaccinated</label><br>
+            <label><input name="vaccine" value="No need vaccine" type="checkbox" class="input-checkbox">No need vaccinated</label><br>
+            <label><input name="vaccine" value="quarantine state" type="checkbox" class="input-checkbox">In quarantine state</label><br>
+        </div><br>
+
+        <div class="form-group">
+            <p>Give us more information if you need help for COVID-19 vaccination.</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..." rows="4" cols="65"></textarea>
+          </div><br>
+
+        <div class="form-group">
+            <button onClick='validate()' type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+        </div><br>
+
+    </form>
+    <div class='blank'></div>
+    </div>
+
+    <script src='js.js'></script>
+</body>
+
