@@ -6,27 +6,27 @@
 </head>
 
 <body>
-    <nav id='navbar' class='navbar'>
-        
+
+    <nav id='navbar' class='navbar'>    
     <ul id='ulnav'>
         <li id='linav'><header id='navhead'><a href="index.html" id='Introduction'>Basic Python</a></header></li>
-        <li id='linav'><a href="#1" id='Introduction' class="nav-link">Introduction</a></li>
-        <li id='linav'><a href="#2" id='Introduction' class="nav-link">Hello World</a></li>
-        <li id='linav'><a href="#3" id='Introduction' class="nav-link">Variable</a></li>
-        <li id='linav'><a href="#4" id='Introduction' class="nav-link">Comments</a></li>
-        <li id='linav'><a href="#5" id='Introduction' class="nav-link">Data type</a></li>
-        <li id='linav'><a href="#6" id='Introduction' class="nav-link">Operators</a></li>
-        <li id='linav'><a href="#6" id='Introduction' class="nav-link">References</a></li>
+        <li id='linav'><a href="#Intro" id='intro-link' class="nav-link">Introduction</a></li>
+        <li id='linav'><a href="#Hello_world" id='hello-link' class="nav-link">Hello World</a></li>
+        <li id='linav'><a href="#Variable" id='Variable-link' class="nav-link">Variable</a></li>
+        <li id='linav'><a href="#comments" id='comment-link' class="nav-link">Comments</a></li>
+        <li id='linav'><a href="#Data_type" id='Data_type-link' class="nav-link">Data type</a></li>
+        <li id='linav'><a href="#Operators" id='Operators-link' class="nav-link">Operators</a></li>
+        <li id='linav'><a href="#reference" id='reference-link' class="nav-link">References</a></li>
     </ul>
     </nav>
 
     <main id="main-doc" class="main-doc">
-    <section id='Introduction' class="main-section">
+    <section id='Intro' class="main-section">
         <header id='Introduction' class="topic">
             Introduction to Basic Python
         </header>
         <article>
-            <h1>What is Python?</h1>
+            <h1>What is Python?</h1><br>
             <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
             <p>It is used for:</p>
         <ul>
@@ -37,7 +37,7 @@
             <li>print "Hello world" to you.</li>
         </ul>
         </article>
-    </section>
+    </section><br><hr>
 
     <section id='Hello_world' class="main-section">
         <header id='Hello_world'></header>
@@ -45,38 +45,183 @@
         <h1>Hello World</h1>
         <p>Let's write our first Python file, called helloworld.py, which can be done in any text editor.</p><br>
 
-        <code>print("Hello World")</code>
-            
-            
+        <div class="code">
+            <code> >> print("Hello World")</code>
+        </div>
+        <p>Console should be send you back below.</p>
+        <div class="code">
+            <code>  Hello World</code>
+        </div>
+        <p>Congratulations! you're programmer now.</p>
         </article>
-    </section>
+    </section><br><hr>
 
-    <section id='3' class="main-section">
-        <header id='3h'></header>
+    <section id='Variable' class="main-section">
+        <header id='Variable'></header>
         <article>
-            
-
-
+        <h1>Variable</h1><br>
+        <p>Variables are containers for storing data values.</p><br>
+        <h2>Creating Variables</h4>
+        <div class="code">
+            <code> >> x = 5 <br>
+             >> y = "John" <br>
+             >> print(x) <br>
+             >> print(y) <br>
+            </code>
+        </div><br>
+        <p> x is store 5 to value (number)<br>
+        and y is store John value (letter)</p>
+        <p>Console should be send you back below.</p>
+        <div class="code">
+            <code>  5 #value of x<br>
+              John #value of y
+            </code>
+        </div>
         </article>
-    </section>
+    </section><br><hr>
 
-    <section id='4' class="main-section">
-        <header id='4h'></header>
+    <section id='comments' class="main-section">
+        <header id='comments'><h1>Comments   
+        </h1></header><br>
         <article>
-        
-
-
+            <p>There are 2 type of comments in Python</p>
+            <ul>
+                <li>Inline comment we use : #comment</li>
+                <li>Multiple line comment we use : """ comment """</li>
+            </ul>
+            <div class="code">
+                <code> >> print('Not Comment')<br>
+                  >> #print('Inline comment')<br>
+                  >> """print('Multiple line comment')
+                  print('Multiple line comment')"""
+                </code>
+            </div>
+            <p>Console should be send you back below.</p>
+            <div class="code">
+                <code> print('Not Comment')</code>
+            </div>
         </article>
-    </section>
+    </section><br><hr>
 
-    <section id='5' class="main-section">
-        <header id='5h'></header>
+    <section id='Data_type' class="main-section">
+        <header id='Data_type'><h1>Data type</h1></header><br>
         <article>
+        <p>In programming, data type is an important concept.
+
+            Variables can store data of different types, and different types can do different things.
             
+            Python has the following data types built-in by default, in these categories:</p><br>
+        <ul>
+            <li>Text Type:	str</li>
+            <li>Numeric Types:	int, float, complex</li>
+            <li>Sequence Types:	list, tuple, range</li>
+            <li>Mapping Type:	dict</li>
+            <li>Set Types:	set, frozenset</li>
+            <li>Boolean Type:	bool</li>
+            <li>Binary Types:	bytes, bytearray, memoryview</li>
+        </ul><br>
 
-
+        <p>we can check our data type by : type(x)</p>
+        <div class="code">
+            <code> >> x = 3.14 #store data in variable <br>
+                 >> print(type(x)) <br>
+                 float
+            </code>
+        </div>
+        <p>After we store the data in variable and print type of variable Python will return type of data. In this case the return is <u>float</u></p>
         </article>
-    </section>
+    </section><br><hr>
+
+    <section id='Operators' class="main-section">
+        <header id='Operators'><h1>Operators</h1></header><br>
+        <article>
+        <p>Arithmetic operators are used with numeric values to perform common mathematical operations:</p><br>
+        <table class="ws-table-all notranslate">
+            <tbody><tr>
+            <th style="width:25%">Operator</th>
+            <th style="width:35%">Name</th>
+            <th style="width:30%">Example</th>
+            </tr>
+            <tr>
+            <td>+</td>
+            <td>Addition</td>
+            <td>x + y</td>
+            
+            </tr>
+            <tr>
+            <td>-</td>
+            <td>Subtraction</td>
+            <td>x - y</td>
+            
+            </tr>
+            <tr>
+            <td>*</td>
+            <td>Multiplication</td>
+            <td>x * y</td>
+            
+            </tr>
+            <tr>
+            <td>/</td>
+            <td>Division</td>
+            <td>x / y</td>
+            
+            </tr>
+            <tr>
+            <td>%</td>
+            <td>Modulus</td>
+            <td>x % y</td>
+            
+            </tr>
+              <tr>
+            <td>**</td>
+            <td>Exponentiation</td>
+            <td>x ** y</td>
+            
+              </tr>
+            <tr>
+            <td>//</td>
+            <td>Floor division</td>
+            <td>x // y</td>
+    
+            </tr>
+            </tbody></table>
+            <br>
+            <p>let's try it!</p>
+            <div class="code">
+            <code> >> x = 5 <br>
+                     >> y = 2 <br>
+                     >> print(x+y) <br>
+                     >> print(x-y) <br>
+                     >> print(x*y) <br>
+                     >> print(x/y) <br>
+                     >> print(x%y)
+            </code>
+            </div>
+            <p>Console should be send you back below.</p>
+            <div class="code">
+                <code> 
+                    >> print(7) <br>
+                    >> print(3) <br>
+                    >> print(10) <br>
+                    >> print(2.5) <br>
+                    >> print(1)
+                </code>
+            </div>
+            <p>Should be practice more for get jobs</p>
+        </article>
+    </section><br><hr>
+
+    <section id='reference' class="main-section">
+        <header id='reference'><h1>References</h1></header><br>
+        <article>
+
+        <ul>
+            <li>All the documentation in this page is taken from <a href="https://www.w3schools.com/python/default.asp">w3schools.com</a></li>
+            
+        </article>
+    </section><br><hr><br><br><br>
+
+
 </main>
 
 </body>
