@@ -11,16 +11,29 @@ body {
 
 
 .navbar {
-    
+    grid-area: navbar;
 }
 
 .main-doc {
-
+    grid-area: maindoc;
+    margin-left: 5%;
+    margin-right: 2%;
 }
+
+
 /* Nav bar Vertical -- large*/
+.container {
+    background-color: cadetblue;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas:
+    'navbar maindoc';
+}
+
 #ulnav {
     list-style-type: none;
-    width: 25%;
+    width: 200px;
     height: 100%;
     position: fixed;
     overflow: auto;
@@ -44,19 +57,28 @@ body {
     background-color: #04AA6D;
   }
 
-  .main-doc {
-    margin-left:30%;
-    margin-right: 2%;
-  }
+  
 
 
 
 
 @media (max-width: 1000px){
 /* Nav bar Horizontal -- small*/
+.container {
+    background-color: cadetblue;
+    display: grid;
+    width: 100%;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'navbar'
+    'maindoc';
+}
+
+
+
 #ulnav {
     list-style-type: none;
-    
     overflow: hidden;
     width: 100%;
     display: block;
