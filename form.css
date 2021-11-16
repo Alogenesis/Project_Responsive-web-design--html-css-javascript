@@ -1,0 +1,28 @@
+/* Layout */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    grid-area: navbar_name;
+}
+
+.main_content {
+    grid-area: main_content_name;
+    margin-left: 5%;
+    margin-right: 2%;
+}
+
+.container {
+    background-color: cadetblue;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-areas:
+    'navbar_name main_content_name';
+}
+
+

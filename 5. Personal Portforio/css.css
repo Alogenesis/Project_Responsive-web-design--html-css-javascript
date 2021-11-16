@@ -1,0 +1,155 @@
+/*Lay out*/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    grid-area: navbar;
+}
+
+.main_content {
+    grid-area: main_content;
+}
+
+
+
+
+.container {
+    /* border check */
+    border-style: solid;
+    border-color: yellow;
+
+
+    display: grid;
+    width: 100%;
+    
+    grid-template-rows: 50px 1fr;
+    grid-template-areas:
+    'navbar' 
+    'main_content';
+}
+
+/* Nav bar */ 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 24px;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background: linear-gradient(to right, #000066 0%, #ff0066 100%);
+  }
+
+/* Welcome */
+#welcome-section {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size:  32px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: lighter;
+    background: linear-gradient(to bottom left, #000066 59%, #666699 113%);
+
+    border-style: solid;
+    border-color: green;
+}
+
+/* Project */
+.project {
+    background-color: #FFFACD;
+    color:slategray;
+    
+}
+
+.project_header {
+    text-align: center;
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/* Project card*/
+.project_card {
+    /* border check */
+    border-style: solid;
+    border-color: black;
+    box-shadow: 5px 10px 5px #888888;
+
+    width: 400px;
+    height: 280px;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.project-title {
+    /* border check 
+    border-style: solid;
+    border-color: orange;*/
+
+    width: 100%;
+    height: 45px;
+    background-color: lightseagreen;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 28px;
+}
+
+.project-title:hover {
+    background-color: red;
+}
+
+.project_img {
+    width: 100%;
+}
+
+@media (min-width: 800px){
+    /* Large monitor*/
+    .project-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        'pcard1 pcard2'
+        'pcard3 pcard4';
+    }
+
+    #project_card1 {
+        grid-area: pcard1;
+    }
+    #project_card2 {
+        grid-area: pcard2;
+    }#project_card3 {
+        grid-area: pcard3;
+    }#project_card4 {
+        grid-area: pcard4;
+    }
+
+
+
