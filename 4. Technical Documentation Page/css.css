@@ -33,7 +33,7 @@ body {
 
 #ulnav {
     list-style-type: none;
-    width: 200px;
+    width: 220px;
     height: 100%;
     position: fixed;
     overflow: auto;
@@ -125,8 +125,11 @@ body {
 
 h1 {
     font-size: 32px;
-    margin-top: 20px;
-    
+    margin-top: 20px;   
+}
+header {
+  font-size: 32px;
+  margin-top: 20px;   
 }
 
 p {
@@ -145,4 +148,5 @@ li {
     padding: 20px;
     margin: 20px;
 }
+
 
