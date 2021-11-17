@@ -20,9 +20,36 @@ body {
     display: grid;
     width: 100%;
     grid-template-columns: 200px 1fr;
+    grid-column-gap: 0px;
     grid-template-rows: 1fr 8fr 1fr;
+    grid-row-gap: 0px;
     grid-template-areas:
     'navbar_name main_content_name';
 }
 
+.center4corner {
+    /* กึ่งกลางหน้ากระดาษ */
+    justify-content: center; 
 
+    /* กึ่งกลางบนถึงล่าง */
+    align-items: center; 
+}
+
+.self_center {
+    /* สมมติค่าว่า กว้าง สูง 200*200 */
+    height: 200px;
+    width: 200px;
+    /* กึ่งกลางบนถึงล่าง ของความกว้างและความยาวของตัวเอง*/
+    align-self: center;
+    /* กึ่งกลางซ้ายขวา ของความกว้างและความยาวของตัวเอง*/
+    justify-self: center;
+    
+}
+
+.auto-fit_grid {
+    /* ขนาดเล็กสุด 60px ไม่ย่อ ถ้าใหญ่กว่าขยายจนเต็ม */
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+
+    /* เล็กสุด 60px ไม่ย่อ ถ้าจอใหญ่กว่า เถิบขึ้นแถวเดียวกันอัตโนมัติ */
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+}
