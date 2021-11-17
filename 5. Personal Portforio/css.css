@@ -16,10 +16,10 @@ body {
 
 
 .container {
-    /* border check */
+    /* border check 
     border-style: solid;
     border-color: yellow;
-
+    */
 
     display: grid;
     width: 100%;
@@ -77,13 +77,14 @@ ul {
     font-weight: lighter;
     background: linear-gradient(to bottom left, #000066 59%, #666699 113%);
 
+    /* 
     border-style: solid;
-    border-color: green;
-}
+    border-color: green; */
+}   
 
 /* Project */
 .project {
-    background-color: #FFFACD;
+    background: linear-gradient(to bottom right, #ffffff 11%, #ffffcc 74%);
     color:slategray;
     
 }
@@ -96,10 +97,10 @@ ul {
 
 /* Project card*/
 .project_card {
-    /* border check */
+    /* border check 
     border-style: solid;
     border-color: black;
-    box-shadow: 5px 10px 5px #888888;
+    box-shadow: 5px 10px 5px #888888; */
 
     width: 400px;
     height: 280px;
@@ -150,6 +151,79 @@ ul {
     }#project_card4 {
         grid-area: pcard4;
     }
+
+}
+
+
+
+.foot1 {
+    grid-area: footer1;
+    /* 
+    border-style: solid;
+    border-color: red; */
+    width: 100%;
+}
+
+.foot2 {
+    grid-area: footer2;
+    /* 
+    border-style: solid;
+    border-color: red; */
+    width: 100%;
+    height: 100px;
+}
+
+.footer {
+    height: 100vh;
+    text-align: center;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size:  32px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: lighter;
+    background: linear-gradient(to bottom right, #9966ff 0%, #33ccff 100%);
+
+    grid-template-rows: 6fr 1fr;
+    grid-template-areas:
+    'footer1'
+    'footer2';
+    
+    /*
+    border-style: solid;
+    border-color: yellow; */
+}
+
+
+.invite_head {
+    font-size: 60px;
+}
+
+.logo {
+    display: inline-flex;
+    height: 30px;
+    width: auto;
+}
+
+.txt_logo {
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+.wrap-link {
+    display: inline;
+}
+
+.wrap-link:hover {
+    background: linear-gradient(to right, #ff6699 0%, #ccff99 100%);
+    height: 50px;
+    
+}
+
+
 
 
 
