@@ -53,3 +53,6 @@ body {
     /* เล็กสุด 60px ไม่ย่อ ถ้าจอใหญ่กว่า เถิบขึ้นแถวเดียวกันอัตโนมัติ */
     grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
 }
+
+
+
